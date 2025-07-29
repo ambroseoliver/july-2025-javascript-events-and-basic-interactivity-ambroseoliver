@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS Events & Interactivity Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Interactive Features Demo</h1>
+
+  <!-- Light/Dark Mode Toggle -->
+  <button id="toggle-mode-btn">Toggle Light/Dark Mode</button>
+
+  <!-- Counter -->
+  <div>
+    <h2>Counter</h2>
+    <button id="decrement-btn">-</button>
+    <span id="counter-value">0</span>
+    <button id="increment-btn">+</button>
+  </div>
+
+  <!-- Collapsible FAQ -->
+  <div>
+    <h2>FAQ</h2>
+    <div class="faq-item">
+      <button class="faq-question">What is this?</button>
+      <div class="faq-answer" style="display:none;">A demo of JS events and interactivity.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">How does validation work?</button>
+      <div class="faq-answer" style="display:none;">Custom JS checks your input and shows messages.</div>
+    </div>
+  </div>
+
+  <!-- Form -->
+  <form id="signup-form" novalidate>
+    <h2>Sign Up</h2>
+    <label>
+      Name:
+      <input type="text" id="name" name="name">
+      <span class="error-message" id="name-error"></span>
+    </label><br>
+    <label>
+      Email:
+      <input type="email" id="email" name="email">
+      <span class="error-message" id="email-error"></span>
+    </label><br>
+    <label>
+      Password:
+      <input type="password" id="password" name="password">
+      <span class="error-message" id="password-error"></span>
+    </label><br>
+    <button type="submit">Submit</button>
+    <div id="form-success" style="color:green;"></div>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
